@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Result</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="school-name">GHUNIPARA ABDUR RASHID SCHOOL</h1>
+        <h2 class="exam-title">Class 10 Test Exam Result 2024</h2>
+        <form id="resultForm">
+            <label for="year">Year:</label>
+            <select id="year" name="year">
+                <option value="2024" selected>2024</option>
+            </select>
+
+            <label for="group">Group:</label>
+            <select id="group" name="group">
+                <option value="science">Science</option>
+                <option value="business studies">Business Studies</option>
+                <option value="humanities">Humanities</option>
+            </select>
+
+            <label for="roll">Roll Number:</label>
+            <input type="number" id="roll" name="roll" required>
+
+            <div class="form-buttons">
+                <button type="reset" class="reset-button">Reset</button>
+                <button type="button" class="submit-button" onclick="showResult()">Submit</button>
+            </div>
+        </form>
+
+        <div id="resultDisplay"></div>
+
+        <!-- Contact Number -->
+        <p style="text-align: center; margin-top: 20px;">For any inquiries, contact: <strong>015******</strong></p>
+
+        <!-- Notice Section -->
+        <div class="notice">
+            <p style="text-align: center; font-size: 1.2rem; font-weight: bold; color: #004080;">বিজ্ঞপ্তি</p>
+            <p style="font-size: 1rem; color: #004080; text-align: justify; margin: 10px;">
+                ১ থেকে ৩টি বিষয় পর্যন্ত যাদের ফেল হয়েছে, তাদের পরবর্তী পরীক্ষায় উন্নতির জন্য বিশেষ সুযোগ দেওয়া হয়েছে। 
+                অনুগ্রহ করে, আপনার পড়াশোনা আরও মনোযোগসহ চালিয়ে যান এবং এই সুযোগটি কাজে লাগান।
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
